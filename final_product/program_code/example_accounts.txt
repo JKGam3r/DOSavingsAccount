@@ -1,0 +1,16 @@
+This text file gives the usernames and passwords of a few example accounts that can be accessed in the database.
+
+1)
+Username: JohnSmith
+Password: GreenFiretruck1!
+Email: None
+
+2)
+Username: Mr.Sandman
+Password: @-Th0meToday
+Email: None
+
+3)
+Username: AnonymousAcc0unt
+Password: A!1abcdefghi
+Email: None

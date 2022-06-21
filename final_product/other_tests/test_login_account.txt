@@ -1,0 +1,17 @@
+class SignIn:
+    TEST prompt():
+        1) Test that a username and password are inputted and returned (no restrictions)
+        2) Test if user can cancel in the username and password fields
+
+    TEST search():
+        1) (Somewhat part of prompt) test usernames that are not in the database
+        2) Test usernames that are in the database
+
+    TEST is_valid():
+        1) Test if the found hashed password (should be a string if there is a valid username)
+        returns whether or not the input and stored passwords are the identical
+        2) Test if there is no found hashed password
+
+    TEST request_sign_in():
+        1) Test if a non-negative number is returned if there is a valid username-password combination
+        2) Return -1 if there is no such account

@@ -1,0 +1,34 @@
+class AccountCreator:
+    TEST create_username():
+            * Rules:
+                - Should not match any other username in the database
+                - Should be a valid username (no forbidden characters)
+        1) Test invalid usernames (examples such as with SPACE ' ')
+        2) Test usernames already in the database
+        3) Test valid usernames not in the database
+        4) Test that user can quit (exit loop)
+
+    TEST create_password():
+            * Rules:
+                - Should be a valid password (special chars, minimum length, etc)
+                - Should ask the user to retype password, passwords should be the same
+        1) Test invalid passwords (such as no upper case letters)
+        2) Test that both typed passwords are the same
+        3) Test that the password is valid
+        4) Test that user can quit (exit loop)
+
+    TEST send_email():
+        1) Test that the email is sent (method mostly consists of combining calls from other modules)
+        2) Test that the verification code is returned
+
+    TEST create_email():
+            * Rules:
+                - Should be a valid email (must include '@' and '.' for instance)
+        1) Test for invalid email format
+        2) Test for valid email format
+        3) Test for valid input code (for email validation)
+        4) Test that user can quit (exit loop)
+
+    TEST add_to_database() and create_new_account():
+        1) Test different combinations of usernames, passwords, and emails to determine and search
+        database to determine if they were successfully added

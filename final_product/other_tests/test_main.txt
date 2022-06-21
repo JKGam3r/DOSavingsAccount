@@ -1,0 +1,60 @@
+TEST start_prompt():
+    1) Test that a response of 'L' allows the user to sign in
+        a. Test that a valid ID will give the user options on what to do with their account
+        b. Test that an invalid ID (-1) will tell the user that there was a problem
+    2) Test that a response of 'C' allows the user to create an account
+        a. Test that a valid ID will give the user options on what to do with their account
+        b. Test that an invalid ID (-1) will tell the user that there was a problem
+    3) Test that a response of 'R' will allow the user to recover an account
+    4) Test that a response of 'Q' or 'QUIT' will stop the program from running
+    5) Test that all other responses will result in an 'invalid response' message
+
+TEST display_options():
+    1) Test that the loop will keep on iterating until the 'still_active' variable becomes True
+
+TEST carry_out_orders():
+    1) Test that typing the command for actions[0] in the actions list calls the display_balance() function
+    2) Test that typing the command for actions[1] in the actions list calls the deposit() function
+    3) Test that typing the command for actions[2] in the actions list calls the transfer() function
+    4) Test that typing the command for actions[3] in the actions list calls the change_credentials() function
+    5) Test that typing the command for actions[4] in the actions list calls the display_alerts() function
+    6) Test that typing the command for actions[5] in the actions list calls the delete_account() function
+    7) Test that typing the command for actions[6] in the actions list calls the sign_out() function
+    8) Test that typing all other responses will result in an 'invalid response' message
+
+TEST display_balance():
+    1) Test that the balance of the user is retrieved and printed out for the user to see
+
+TEST deposit():
+    1) Test that a valid amount to be deposited results in that amount being added to the user's balance
+    2) Test that all other responses result in an 'invalid response' message
+
+TEST transfer():
+    1) Test that if no account is found, the function returns and states that no account was found
+    2) Test that transferring money to the same account exits the function
+    3) Test that a non-numeric transfer amount exits the function
+    4) Test if the user has insufficient funds (transfer amount is less than the user's account balance)
+        a. The function should return if there is no money ($0) in the account
+        b. The loop should iterate until the user selects 'Yes' to transfer remaining funds to the other account
+        or "No" to exit the function
+    5) Test that if there ARE sufficient funds, then the appropriate amount is transferred
+    6) Test that the proper notification is added
+
+TEST change_credentials():
+    1) Test that the loop keeps iterating until a valid response is found
+        a. Test that a cancellation of the request stops the loop and exits the function
+        b. Test that a response of '1' allows the user to change their username
+        c. Test that a response of '2' allows the user to change their password
+        d. Test that a response of '3' allows the user to change their email address
+
+TEST display_alerts():
+    1) Test that all alerts are displayed
+
+TEST sign_out():
+    1) Test that an alert is created and the boolean value False is returned
+
+TEST delete_account():
+    1) Test that the loop keeps iterating until a valid response is recorded
+        a. Test that a response of "Yes" results in the deletion of the account
+        b. Test that no will return out of the function
+        c. Test that all other responses result in an 'invalid response' message

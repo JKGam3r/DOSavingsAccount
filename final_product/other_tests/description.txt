@@ -1,0 +1,4 @@
+These tests outline non-unit testing, dealing with databases and user input.
+
+They consist of a text document for each file in the program outlining the types
+of tests conducted.

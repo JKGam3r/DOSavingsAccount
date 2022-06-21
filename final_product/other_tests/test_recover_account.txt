@@ -1,0 +1,12 @@
+class AccountRecover:
+    TEST ask_for_cred():
+        1) Test that loop keeps iterating until a valid response (1 or 2) is found
+        2) Test that user can cancel the request for an account recovery
+        3) Test that a given username or email is in the database
+        4) Test that the username and email are returned
+
+    TEST recover_account():
+        1) Test if there is an email to send a verification code to
+        2) Test that a valid code allows the user to change passwords
+        3) Test that both passwords (first try and retyped one) are the same
+        4) Test that the user can cancel the request to recover the password

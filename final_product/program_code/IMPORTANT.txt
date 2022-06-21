@@ -1,4 +1,8 @@
 The actual code for the program
+
 PLEASE NOTE: In the file create_account.py in the method send_email(), the 'sender_email' and 'password' fields should be
 replaced with a valid email address and password (or app password), respectively.  The application can run smoothly without
 the use of the fields above, but trying to send emails will result in an error.
+
+Also note that there is a file in this folder titled 'example_accounts.txt.'  It lists a few accounts (usernames+passwords)
+already in the 'accounts.db' database, which the user can access.

@@ -1,2 +1,2 @@
 # DOSavingsAccount
-This project demonstrates constructing a banking data system for user accounts with basic security.
+This project demonstrates constructing a banking data system for user accounts with basic security. Its features include ability to deposit funds, transfer funds, and recovering credentials, among other features. Measures were put in place to help prevent against SQL injection (for the SQLite database), and the SHA-256 hashing algorithm was used to store passwords in the database.
